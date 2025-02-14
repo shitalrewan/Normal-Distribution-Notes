@@ -1,0 +1,140 @@
+https://chatgpt.com/canvas/shared/67afba3f6b0881918eb964f3f9d3f4b3 
+
+**Notes on Normal Distribution Problems**
+
+### 1. Probability and Z-Score Calculation
+**Objective:** Find the probability of a data point falling within a range.
+
+**Example:**
+The heights of students follow a normal distribution with mean = 170 cm and standard deviation = 8 cm. What is the probability that a randomly selected student is shorter than 160 cm?
+
+**Solution:**
+
+Convert to Z-score:
+\[ Z = \frac{X - \mu}{\sigma} = \frac{160 - 170}{8} = -1.25 \]
+
+Find probability using normal CDF:
+\[ P(X < 160) = P(Z < -1.25) = 0.1056 \]
+
+Thus, 10.56% of students are shorter than 160 cm.
+
+---
+
+### 2. Finding a Data Point from a Given Percentile (Inverse Normal, PPF)
+**Objective:** Find the value that corresponds to a given percentile.
+
+**Example:**
+The weights of apples are normally distributed with mean = 200 g and standard deviation = 15 g. What is the weight that is exceeded by only 5% of apples?
+
+**Solution:**
+
+Find Z-score for the 95th percentile:
+\[ Z = 1.645 \]
+
+Convert Z-score to weight:
+\[ X = \mu + Z \cdot \sigma = 200 + (1.645 \times 15) = 224.68 g \]
+
+So, only 5% of apples weigh more than 224.68 g.
+
+---
+
+### 3. Confidence Intervals (Estimating Population Mean)
+**Objective:** Find a range where the population mean likely falls.
+
+**Example:**
+A sample of 50 light bulbs has a mean lifespan of 1200 hours with a standard deviation of 100 hours. Find a 95% confidence interval for the population mean.
+
+**Solution:**
+
+Find Z-score for 95% confidence level:
+\[ Z = 1.96 \]
+
+Calculate standard error:
+\[ SE = \frac{\sigma}{\sqrt{n}} = \frac{100}{\sqrt{50}} = 14.14 \]
+
+Compute confidence interval:
+\[ CI = X\pm Z \cdot SE = 1200 \pm (1.96 \times 14.14) = (1172.3, 1227.7) \]
+
+So, the true population mean is likely between 1172.3 and 1227.7 hours.
+
+---
+
+### 4. Hypothesis Testing (One-Sample Z-Test)
+**Objective:** Check if a sample mean is significantly different from a population mean.
+
+**Example:**
+A company claims that its battery lasts 300 hours on average. A test of 40 batteries gives an average of 290 hours with a standard deviation of 20 hours. Is the company's claim valid at a 5% significance level?
+
+**Solution:**
+
+Set up hypotheses:
+\[ H_0: \mu = 300 \]
+\[ H_a: \mu \neq 300 \]
+
+Compute Z-score:
+\[ Z = \frac{X - \mu}{\sigma/\sqrt{n}} = \frac{290 - 300}{20/\sqrt{40}} = -3.16 \]
+
+Find p-value from Z = -3.16:
+\[ p-value = 0.0016 \]
+
+Since p-value < 0.05, we reject \( H_0 \), meaning the company’s claim is not valid.
+
+---
+
+### 5. Comparing Two Means (Two-Sample Z-Test)
+**Objective:** Compare the means of two groups.
+
+**Example:**
+A school wants to compare math scores between boys and girls.
+
+- Boys: \( n = 40, \) mean = 75, standard deviation = 10
+- Girls: \( n = 35, \) mean = 78, standard deviation = 8
+
+Test at 5% significance level.
+
+**Solution:**
+
+Compute standard error of the difference:
+\[ SE = \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}} = \sqrt{\frac{10^2}{40} + \frac{8^2}{35}} = 2.08 \]
+
+Compute Z-score:
+\[ Z = \frac{75 - 78}{2.08} = -1.44 \]
+
+Find p-value:
+\[ p-value = 0.149 \]
+
+Since p-value > 0.05, we fail to reject \( H_0 \), meaning there is no significant difference between boys' and girls' scores.
+
+---
+
+### 6. Sampling Distribution and CLT Questions
+**Objective:** Use CLT to estimate probabilities for sample means.
+
+**Example:**
+A machine fills cereal boxes with mean = 500 g and standard deviation = 20 g. If a random sample of 36 boxes is selected, what is the probability that the sample mean weight is greater than 510 g?
+
+**Solution:**
+
+Find standard error:
+\[ SE = \frac{\sigma}{\sqrt{n}} = \frac{20}{\sqrt{36}} = 3.33 \]
+
+Compute Z-score:
+\[ Z = \frac{510 - 500}{3.33} = 3.00 \]
+
+Find probability using normal CDF:
+\[ P(X > 510) = P(Z > 3.00) = 0.0013 \]
+
+So, there’s only a 0.13% probability that the sample mean is greater than 510 g.
+
+---
+
+### Conclusion:
+Normal distribution problems involve:
+
+✅ Z-score calculations (finding probabilities)
+✅ Finding percentiles (using norm.ppf)
+✅ Confidence intervals (estimating population mean)
+✅ Hypothesis testing (comparing means)
+✅ Comparing two populations
+✅ Using the Central Limit Theorem for sample means
+
