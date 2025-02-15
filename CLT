@@ -1,0 +1,12 @@
+We can apply CLT even if we don’t know the population standard deviation,
+
+We can use sample standard deviation as proxy.
+
+The Central Limit Theorem (CLT) is not limited to populations following a normal distribution. One of the key insights of the CLT is that, 
+regardless of the shape of the population distribution, the sampling distribution of the sample mean becomes approximately normally distributed as the sample size increases.
+This is true for a wide range of population distributions, including those that are not normally distributed.
+
+In practice, as long as certain conditions of random sampling, independence, and an adequately large sample size are met, 
+the CLT allows us to make approximations using the normal distribution even for populations that do not have a normal distribution. 
+This is why the CLT is such a powerful tool in statistics because it allows us to perform inferential statistics and hypothesis testing in a wide variety of real-world scenarios, 
+even when we don’t know the exact shape of the population distribution.
